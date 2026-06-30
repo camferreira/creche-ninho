@@ -4,8 +4,16 @@ export const navigationLinks = [
     label: "Início",
   },
   {
-    href: "/sobre",
-    label: "Sobre Nós",
+    href: "/quem-somos",
+    label: "Quem Somos",
+  },
+  {
+    href: "/oferta-educativa",
+    label: "Oferta Educativa",
+  },
+  {
+    href: "/informacoes",
+    label: "Informações",
   },
   {
     href: "/galeria",

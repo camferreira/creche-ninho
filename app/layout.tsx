@@ -1,21 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Inter, Poppins } from "next/font/google";
+
 import Navbar from "@/components/layout/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import "./globals.css";
+
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
   subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Associação de Solidariedade Social O Ninho",
-  description: "Creche em Évora dedicada ao desenvolvimento, segurança e bem-estar das crianças.",
+  description:
+    "Creche em Évora dedicada ao desenvolvimento, segurança e bem-estar das crianças.",
 };
 
 export default function RootLayout({
@@ -26,14 +30,15 @@ export default function RootLayout({
   return (
     <html
       lang="pt"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${poppins.variable}`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen">
         <Navbar />
 
-        <main className="flex-1">
-          {children}
-        </main>
+        <main>{children}</main>
+
+        {/* Mais tarde */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
