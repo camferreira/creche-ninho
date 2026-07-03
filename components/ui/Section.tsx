@@ -10,7 +10,7 @@ export default function Section({
   className = "",
 }: SectionProps) {
   return (
-    <section className={`py-16 ${className}`}>
+    <section className={`py-12 ${className}`}>
       <Container>{children}</Container>
     </section>
   );

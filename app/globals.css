@@ -5,13 +5,19 @@
      CORES
      =========================== */
 
+  /* Verde principal */
   --primary: #6d9f71;
   --primary-hover: #5b8860;
+  --primary-light: #eaf5ec;
 
-  --secondary: #eaf5ec;
-  --accent: #f2c66d;
+  /* Cores de destaque */
+  
+  --accent: #fdaf21;
+  --accent-light: #fdefd8;
 
+  /* Neutros */
   --background: #fcfcfa;
+  --background-soft: #fefbf8;
   --surface: #ffffff;
 
   --text: #2d3748;
@@ -42,21 +48,22 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--background-soft);
   color: var(--text);
 
   font-family: var(--font-inter), sans-serif;
-  h1,
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: var(--font-poppins), sans-serif;
-}
-
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 button {
@@ -66,4 +73,22 @@ button {
 img {
   display: block;
   max-width: 100%;
+}
+
+.hero-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-image {
+    -webkit-mask-image: url("/images/hero-mask.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+
+    mask-image: url("/images/hero-mask.svg");
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
 }

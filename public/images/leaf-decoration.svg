@@ -1,0 +1,83 @@
+<svg
+  width="220"
+  height="220"
+  viewBox="0 0 220 220"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+
+  <g transform="translate(-25 20)">
+  <!-- Mancha verde -->
+  <path
+  d="
+    M25 70
+    C28 82 60 88 94 102
+    C128 116 160 138 188 168
+    C202 182 212 193 212 200
+    L210 200
+    L25 200
+    Z"
+  fill="#DDEBD7"
+/>
+
+  <!-- Ramo -->
+  <g
+    fill="none"
+    stroke="#B7CDAF"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.75"
+  >
+    <!-- Caule -->
+    <path d="M68 165 C78 155 86 140 88 125"/>
+    <path d="M68 165 C82 150 104 132 114 92"/>
+    <path d="M68 165 C80 155 88 140 130 133"/>
+
+    <!-- Folha esquerda -->
+    <path
+      d="
+        M88 125
+        C58 105 56 75 78 58
+        C95 73 101 102 88 125
+        Z"
+    />
+    <path d="M88 125 C82 109 79 90 79 63"/>
+
+    <!-- Folha superior -->
+    <path
+      d="
+        M114 92
+        C96 68 102 40 122 28
+        C137 48 132 74 114 92
+        Z"
+    />
+    <path d="M114 92 C116 72 118 52 120 34"/>
+
+    <!-- Folha direita -->
+    <!-- Folha direita -->
+    <path
+      d="
+        M130 133
+        C145 105 166 98 184 106
+        C174 134 152 146 130 133
+        Z"
+    />
+
+    <!-- Veio -->
+    <path
+      d="M130 133 C145 121 164 113 184 106"
+    />
+  </g>
+
+  <!-- Pontinho decorativo -->
+  <circle
+    cx="70"
+    cy="18"
+    r="3"
+    fill="#F6E2C6"
+    opacity="0.8"
+  />
+
+  </g>
+</svg>
